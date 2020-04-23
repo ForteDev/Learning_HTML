@@ -15,3 +15,22 @@ vscode로 내 저장소 (저장소 소유 계정이 'ForteDev'인)로 계속 커
 게시글을 보니까 계정 변경하는게 생각보다 어려운 작업이었나 봐요. 😥  
 이렇게 글로 정리해주신 글쓴이의 희생에 감사드립니다. （￣︶￣）↗　 
 
+읭? 생각보다 훨씬 쉬운데? 블로그에 나온 내용은 다른 내용인 것 같다.   
+그냥 vscode 터미널에서
+```
+git config user.name   
+git config user.email   
+```
+을 파악해서 연결된 계정 확인하고
+```
+git config --global user.name "ForteDev"
+git config --global user.email "whdtjd419@naver.com'
+```
+으로 적어주니 그냥 되네  
+흠 왜 이렇게 간단하게 잘 되는지는 모르겠는데 일단 잘 됐으니 다행이네 😄
+[https://hashcode.co.kr/questions/4342/git%EC%97%90-%EB%93%B1%EB%A1%9D%EB%90%9C-%EA%B3%84%EC%A0%95-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95] 에서 힌트를 얻을 수 있다.   
+
+> p.s. 어 이 내용을 기록하다가 보니 windows os에서 이모지를 입력하는 방법을 알게 되었다.  
+> 그냥 ```윈도우 키 + ' ``` 혹은 ```윈도우 키 + ; ```만 입력하면 된다.  
+
+<2020-04-23>
