@@ -31,6 +31,6 @@ git config --global user.email "whdtjd419@naver.com'
 [https://hashcode.co.kr/questions/4342/git%EC%97%90-%EB%93%B1%EB%A1%9D%EB%90%9C-%EA%B3%84%EC%A0%95-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95] 에서 힌트를 얻을 수 있다.   
 
 > p.s. 어 이 내용을 기록하다가 보니 windows os에서 이모지를 입력하는 방법을 알게 되었다.  
-> 그냥 ```윈도우 키 + ' ``` 혹은 ```윈도우 키 + ; ```만 입력하면 된다.  
+> 그냥 ```윈도우 키 + ' ``` 혹은 ```윈도우 키 + ;``` 만 입력하면 된다.  
 
 <2020-04-23>
