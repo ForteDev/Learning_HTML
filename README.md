@@ -11,7 +11,7 @@
 # HTML 공부 진행 방향
 지금 HTML 공부가 초초초초초반이라 공부를 어찌해야 할지도 확실치 않아요...   
 그래서 공부 방향이 계속 변할 것 같아요.  
-일단 지금은 __[w3school](https://www.w3schools.com/html/default.asp)__에서 학습하고자 해요    
+일단 지금은 **[w3school](https://www.w3schools.com/html/default.asp)**에서 학습하고자 해요    
 *아 오늘은 필력이 안 먹네 ㅠㅠ 나중에 작성해야 겠다...*   
 [2020-04-25]
 
