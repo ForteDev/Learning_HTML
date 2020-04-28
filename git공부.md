@@ -17,17 +17,17 @@ vscode로 내 저장소 (저장소 소유 계정이 'ForteDev'인)로 계속 커
 게시글을 보니까 계정 변경하는게 생각보다 어려운 작업이었나 봐요. 😥  
 이렇게 글로 정리해주신 글쓴이의 희생에 감사드립니다. （￣︶￣）↗　 
 
-읭? 생각보다 훨씬 쉬운데? 블로그에 나온 내용은 다른 내용인 것 같다.   
+읭? 생각보다 훨씬 쉬운데? *블로그에 나온 내용은 다른 내용인 것 같다.*   
 그냥 vscode 터미널에서
 
-```
+```git
 git config user.name    
 git config user.email   
 ```
 
 을 파악해서 연결된 계정 확인하고
 
-```
+```git
 git config --global user.name "ForteDev"
 git config --global user.email "whdtjd419@naver.com'
 ```
@@ -37,6 +37,16 @@ git config --global user.email "whdtjd419@naver.com'
 [https://hashcode.co.kr/questions/4342/git%EC%97%90-%EB%93%B1%EB%A1%9D%EB%90%9C-%EA%B3%84%EC%A0%95-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95] 에서 힌트를 얻을 수 있다.   
 
 > p.s. 어 이 내용을 기록하다가 보니 windows os에서 이모지를 입력하는 방법을 알게 되었다.  
-> 그냥 ```윈도우 키 + ' ``` 혹은 ```윈도우 키 + ;``` 만 입력하면 된다.  
+> 그냥 `윈도우 키 + '` 혹은 `윈도우 키 + ;` 만 입력하면 된다.  
 
-<2020-04-23>
+<2020-04-23>  
+
+## 풀과 패치 (Pull & Fetch)
+
+'그래 프로그래밍 공부해야지... 근데 언제 하지😴' 라고 생각하며 1년이라는 긴 시간을 홀라당 까먹고 있던 저에게 `vscode`를 설치하고 `github`와 연동하며 공부하니까 정말 재미있는 것 같아요. 이 쉬운 공부를 왜 이제서야 시작했을까! 😂  
+요즘은 `vscode`로 코드 작성하고 커밋하고 `github` 저장소로 푸시하는 작업을 무한 반복하고 있어요. 근데 그러다가  
+
+![gitfetch_notification](./img/gitfetch_nofitication.PNG)  
+**git fetch** 이건 뭐지? 뭔가 알지도 못하면서 순진하게 Yes를 클릭하면 안되겠다는 직감이 들었다.  
+기능부터 알아봐야 겠다는 생각이 들었고, 구글링을 통해  
+<https://www.git-tower.com/learn/git/faq/difference-between-git-fetch-git-pull>
