@@ -1,9 +1,11 @@
 # GET IT! GIT
+
 이 마크다운 문서는 GIT을 공부하는 과정을 기록하기 위한 문서입니다.  
 git과 github를 하나하나 차근차근 공부하면서, 배우는 자료중에서 기록으로 남기고 싶은 것을 모아둔 문서로 만드려고요.ㅎㅎ  
 _(음... 서문이 마음에 안 드는데 언젠가 좋은 문구가 생각나겠지?)_
 
 ## vscode에서 github 로그아웃
+
 방금 알게 된 충격적인 사실이에요.
 vscode로 내 저장소 (저장소 소유 계정이 'ForteDev'인)로 계속 커밋하고 푸시하고 있었습니다.  
 푸시하고 GitHub에서 확인하면서 작업하고 있었는데...   
@@ -17,15 +19,19 @@ vscode로 내 저장소 (저장소 소유 계정이 'ForteDev'인)로 계속 커
 
 읭? 생각보다 훨씬 쉬운데? 블로그에 나온 내용은 다른 내용인 것 같다.   
 그냥 vscode 터미널에서
+
 ```
-git config user.name   
+git config user.name    
 git config user.email   
 ```
+
 을 파악해서 연결된 계정 확인하고
+
 ```
 git config --global user.name "ForteDev"
 git config --global user.email "whdtjd419@naver.com'
 ```
+
 으로 적어주니 그냥 되네  
 흠 왜 이렇게 간단하게 잘 되는지는 모르겠는데 일단 잘 됐으니 다행이네 😄
 [https://hashcode.co.kr/questions/4342/git%EC%97%90-%EB%93%B1%EB%A1%9D%EB%90%9C-%EA%B3%84%EC%A0%95-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95] 에서 힌트를 얻을 수 있다.   
