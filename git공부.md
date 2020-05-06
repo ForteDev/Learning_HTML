@@ -52,7 +52,29 @@ git config --global user.email "whdtjd419@naver.com'
 ![gitfetch_notification](./img/gitfetch_nofitication.PNG)  
 
 처음 들어보는 `git fetch`에 대해서 얘기하더라고요. 창에 뜬 말을 제 짧디짧은 영어실력으로 번역하면 <u>***주기적으로 코드를 `git fetch`할까요?***</u> (~~역시나 해석이 어색하구먼~~) 라는 뜻이라고 할 수 있겠네요.  
+<<<<<<< HEAD
 `git pull`은 들어봤어도 `git fetch`는 처음 들어보네요. 처음들어보는 개념인 만큼 창은 아직 닫지 말고 구글 검색창에 `git fetch`라고 검색해봤습니다.  
 찾아보니 `git fetch`에 대한 양질의 글이 정말 많더라고요. 그중에서 다음 링크에서 좋은 내용을 읽을 수 있었습니다.  
 
 <https://www.git-tower.com/learn/git/faq/difference-between-git-fetch-git-pull>  
+=======
+`git pull`은 들어봤어도 `git fetch`는 처음 들어보네요. 처음들어보는 개념인 만큼 검색을 통해 답을 찾아봐야겠다는 생각이 들었어요. 그래서 알림창을 그대로 놔두고 구글에 관련 정보를 수집하기 시작했습니다. 여러 글을 살펴봤는데, `git`을 처음 배워보는 입장에서 가장 좋은 글은 다음 링크의 글이었어요. 영어지만 간단명료하게 핵심만 쫙쫙 짚으며 개념을 알려주더라고요.  
+
+<https://www.git-tower.com/learn/git/faq/difference-between-git-fetch-git-pull> 
+
+그래서 이제 제가 공부한 개념을 되짚을 겸 `git fetch`에 대한 위 링크의 설명을 요약해볼게요.
+
+### 풀(`git pull`)과 패치(`git fetch`)의 공통점
+
+`git pull`과 `git fetch`는 상당히 유사한 개념이라고 합니다. 둘 다 `GitHub`와 같은 원격저장소에서 데이터를 다운로드하는 명령어이기 때문이죠. 이 두 명령어중 `git pull`은 저에게 *그나마* 익숙한 개념인데요. 왜냐하면 `vscode`를 통해 코드를 작성하면서 꽤 자주 사용하는 기능이기 때문이죠. `vscode`를 사용하면 `git`기능을 담당하는 '소스제어 항목' (왼쪽 아래 사진의 빨간색으로 표시한 부분)에서 풀버튼(오른쪽 아래 사진)을 클릭하며 `GitHub`같은 원격저장소에서 소스 파일을 다운로드하게 됩니다.
+
+<center>
+    <img src="./img/vscode_sourcecontrol_menu.PNG" width="84" height="415"> 
+    &nbsp&nbsp&nbsp&nbsp&nbsp
+    <img src="./img/vscode_pull_button.jpg" width="311" height="415">
+    <br>
+    <i>vscode 소스제어 메뉴의 <b>풀 (git pull)</b> 기능</i>
+</center>
+
+`vscode`의 왼쪽 큰 `git pull` 명령어는 말 그대로 원격저장소에서 데이터를 땡겨오는(영어로 pull)는 역할을 합니다. 다시말해 `git pull`이라고 실행하면 프로그램은 자동으로 원격저장소 (`GitHub`같은)에서 최신 데이터를 제 컴퓨터로 가져옵니다. 새로운 파일이 추가되었으면 제 컴퓨터에 다운로드하고, 기존의 파일이 수정되었으면 수정본으로 파일을 덮어쓰는 작업을 수행하죠. 그래서 여러 사람이 함께 작업하는  특히 두 대의 컴퓨터를 사용해서 작업하다 보면 사용하게 되는 일이 더 잦아지는 것 같습니다.  
+>>>>>>> 3fcaa3eb6de01b0f944193eabde75b371b02cd7c
