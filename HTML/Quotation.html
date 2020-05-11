@@ -6,6 +6,91 @@
     <title>HTML Quotation</title>
 </head>
 <body>
-    
+    <h1>HTML Quotation - HTML 인용구</h1>
+    <p>이 페이지는 <a href="https://www.w3schools.com/html/html_quotation_elements.asp">https://www.w3schools.com/html/html_quotation_elements.asp</a>에서 인용해왔습니다.</p>
+    <hr>
+    <h2 style="text-align: center;">HTML Quotation and Citation Elements <br> - HTML 발췌와 인용 요소 -</h2>
+
+    <h3>q 태그</h3>
+    <p>
+        <font style="color: red;">&lt;q&gt;</font> 태그는 짧은 인용구를 정의합니다. 브라우저는 보통 인용 요소를 따옴표로 둘러쌉니다. <q>여러분은 모두 ··· 동료감[을] 나타내십시오.—베드로 전서 3:8.</q> 
+        <br><br>
+        <font style="color: red;">&lt;blockquote&gt;</font>태그는 다른 출처에서 인용한 구절을 정의합니다. 
+        브라우저는 보통 blockquote(인용문 토막이라고 해야하나?)를 들여쓰기 합니다.
+    </p>
+
+    <h3>blockquote 태그</h3>
+    <blockquote cite="https://wol.jw.org/ko/wol/h/r8/lp-ko">
+        우리는 우리의 감정과 복지에 관심을 가진 사람들과 함께 있는 것을 좋아합니다.
+        그들은 우리의 생각과 감정이 어떠한지 알기 위해 우리의 입장에서 생각하려고 노력합니다.
+        때로는 우리가 부탁하기도 전에 우리에게 필요한 것이 무엇인지 알아내고 도와줍니다.
+        우리는 우리에게 “동료감”을 보이는 사람들에게 고마움을 느낍니다. 
+        그리스도인인 우리 모두는 이해심 즉 동료감을 나타내기를 원합니다. 
+        하지만 그렇게 하려면 노력이 필요할지 모릅니다. 
+        이유가 무엇입니까? 
+        한 가지 이유는 우리가 불완전하기 때문입니다. (로마 3:23) 
+        따라서 우리는 자기중심적으로 생각하는 선천적인 경향과 맞서 싸워야 합니다. 
+        또한 일부 사람들은 성장 배경이나 과거의 경험 때문에 다른 사람에게 이해심을 보이기가 힘들지 모릅니다.
+        그에 더해 우리는 주위 사람들의 태도에 영향을 받을 수 있습니다. 
+        이 마지막 날에 많은 사람은 타인의 감정을 고려하지 않습니다. 
+        그들은 “자기를 사랑합니다.” (디모데 후서 3:1, 2) 
+        하지만 우리는 여호와 하느님과 그분의 아들 예수 그리스도를 본받음으로 동료감을 더 잘 나타낼 수 있습니다. 「파19.03」 14면 1-3항
+    </blockquote>
+
+    <h3>abbr 태그</h3>
+    <p>
+        <font style="color: red;">&lt;abbr&gt;</font> 요소는 약어나 머리글자(WHO 같은 거)를 정의합니다. 
+        abbr 태그로 표시한 부분을 마우스로 갖다대면 title 속성에 적은 내용이 표현됩니다.
+        약어를 태그로 나타내면 브라우저, 번역기와 검색엔진에 유용한 정보를 제공할 수 있습니다. 
+    </p>
+    <p>
+        The <abbr title="Wolrd Health Organization">WHO</abbr> was founded in 1948.
+        <br>
+        정치 불안으로 정당에 <abbr title="비상대책위원회">비대위</abbr>가 출범했다.
+    </p>
+
+    <h3>address 태그</h3>
+    <p>
+        <font style="color: red;">&lt;address&gt;</font> 태그는 HTML 문서나 기사의 저자 연락처 정보를 정의합니다. 
+        <font style="color: red;">&lt;address&gt;</font> 태그는 대게 <i>기울임체</i>로 표시됩니다. 
+        대다수의 브라우저에서는 주소 태그 앞뒤로 줄바꿈을 추가합니다.
+    </p>
+    <address>
+        Written by John Doe. <br>
+        Visit us at: <br>
+        Example.com <br>
+        Box 564, Disneyland <br>
+        USA
+    </address>
+
+    <h3>cite 태그</h3>
+    <p>
+        <font style="color: red;">&lt;cite&gt;</font>태그 요소는 작품의 제목을 정의합니다. 
+        브라우저는 대게 <font style="color: red;">&lt;cite&gt;</font> 태그를 <i>기울임체</i>로 표시합니다.
+    </p>
+    <p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/The_Scream.jpg" alt="절규" width="367px" height="460px">
+        <br>
+        <cite>절규</cite>, 에드바르 뭉크, 1893년작
+    </p>
+
+    <h3>bdo 태그</h3>
+    <p>
+        <font style="color: red;">&lt;bdo&gt;</font> 태그는 Bi-Directional Override 의 약자입니다.
+        한국어로는 역방향 쓰기라고 할까나 잘 모르겠네. 여하튼 글씨를 로꾸거 표시한다. 
+    </p>
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <bdo dir="rtl">이 글은 오른쪽에서 왼쪽으로 적힐겁니다.</bdo>
+    <p>
+        bdo태그에 대해 두 가지 의문이 생겼는데
+        <ol>
+            <li>아니 이 기능을 왜 만들었는지 모르겠네 ㅋㅋㅋㅋ 이스터 애그인가?</li>
+            <li>이 기능이 발췌와 인용이랑 무슨 상관인지 모르겠네 ㅋㅋㅋㅋㅋ</li>
+        </ol>
+        그냥 '이런 태그도 있구나'라고 생각해야지 뭐 bdo랑 꼭 같이 적어야 하는 dir은 direction을 의미하고
+        거꾸로 적을 때 쓰는 rtl은 right to left를 의미한다. 이걸 알면 꼭 rtl을 외울 필요는 없겠네용.
+
+    </p>
+    <bdo dir="ltr">이건 화면에 어떻게 뜰까요?</bdo>
 </body>
 </html>
