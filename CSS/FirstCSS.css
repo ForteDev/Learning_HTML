@@ -1,9 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 body {
     background-color: powderblue;
 }
 h1 {
-    color: blue;
+    color: red;
+    font-family: Verdana, "궁서";
+    font-size: 300%
 }
 p {
-    color: red
+    color: blue;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 160%;
+    border: 1px solid brown;
+    padding: 30px;
+    margin: 20px;
+}
+#p01 {
+    color: black;
+    font-family: '굴림', cursive;
+    font-size: 200%;
+    border: 1px solid tomato;
+    padding: 30px;
+    margin: 20px;
+}
+
+p.class {
+    color: darkmagenta;
+    font-family: '고딕';
+    font-size: 120%;
+    border: 1px dashed darkolivegreen;
+    padding: 30px;
+    margin: 20px;
 }
