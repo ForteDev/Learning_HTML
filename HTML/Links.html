@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+</head>
+<body>
+    <h1>HTML Links - HTML 페이지 연결</h1>
+    <p>
+        이 HTML 문서는 HTML에서 링크로 페이지를 연결하는 내용을 공부하려고 작성한 문서입니다. 모든 내용을 <a href="https://www.w3schools.com/html/html_links.asp" target="_parent_">https://www.w3schools.com/html/html_links.asp</a>에서 배웠습니다. 
+        오늘 스승의 날(5월 15일)인데 감사합니다, w3 선생님~ 
+    </p>
+    <hr>    
+    <h2>&lt;a&gt; 태그</h2>
+    <p>
+        a 태그의, href 속성. href = "링크 주소"를 입력할 수 있다. 
+        a 태그로 둘러싸인 부분에 글자를 적으면 해당 글자가 시퍼렇게 멍이 들면서 하이퍼링크가 생성된다. 
+        하이퍼링크를 클릭하면 href에 적은 주소로 이동한다.
+    </p>
+    <p>
+        href 속성에 http 주소 뿐만 아니라 컴퓨터 폴더에 있는 다른 html 문서를 입력할 수 있다. 
+        <a href="FirstHTML.html" target="_parent">이렇게</a>
+        <br>
+        사진을 링크로 적으면 어떻게 될려나
+        <a href="../img/gitfetch_nofitication.PNG">이렇게?</a>
+        <br>
+        오! 사진으로 잘 연결되었다. <a href="../memo.md">이거는 어떻게 되려나?</a> 아 md 파일은 그냥 아무 꾸밈없이 나타나는 구나
+        마지막으로 <a href="../video/[심쿵주의]_귀여운_아기_고양이_키우기_(비비의_육아일기).mp3">mp3파일은</a> 동영상을 띄우려고 했는데, mp3 다운로더로 받아서
+        mp3 파일이 되었구나 ;; 그렇구나 ㅋㅋㅋ 이런. 크롬 브라우저에서 실행이 된다. 동영상은 해보지 않았지만 크롬 브라우저에서 동영상 재생이 될 것이라 생각한다. 
+    </p>
+    <p>
+        HTML 링크에 target 속성을 추가하면 브라우저 창에 띄우는 방식을 설정할 수 있다. 
+        w3school에서는 총 5가지의 방식을 알려준다. 
+        <ul>
+            <li><b><font style="color: tomato;">_blank</font></b> - 연결된 웹페이지가 새로운 창이나 탭에서 열린다.</li>
+            <li><b><font style="color: tomato;">_self</font></b> - 웹페이지가 같은 창/탭에서 열린다. (기본 설정)</li>
+            <li><b><font style="color: tomato;">_parent</font></b> - 웹페이지가 프레임에 갇혀있는 경우 웹페이지가 열려있는 창에 화면을 띄움, 프레임의 링크가 바뀌는 게 아니라. 프레임에 띄운게 아니라면 _self와 동일</li>
+            <li><b><font style="color: tomato;">_top</font></b> - 위와 같이 프레임에 갇혀있는 경우 웹페이지가 프레임을 뚫고 창을 가득 채움._parent와 크게 다르지 않음. 프레임에 띄운게 아니라면 _self와 동일</li>
+            <li><b><font style="color: tomato;">_framename</font></b> - 이름을 붙인 프레임에 링크를 띄움. 아래에 보이는 프레임처럼</li>
+        </ul>
+        위의 말이 뭔 말인지 모르겠죵? 실험을 통해 배워봅시다. 
+        <br>
+        <a href="CSS.html" target="_blank">_blank</a> <a href="CSS.html" target="_self">_self</a> <a href="CSS.html" target="_parent">_parent</a> <a href="CSS.html" target="_top">_top</a>
+        <a href="../HTML/Links copy.html" target="myframe">myframe</a>
+        <br>
+        <iframe name="myframe" style="width:100%; height: 330px"></iframe>
+        <br>
+        주로 _blank와 _self를 많이 써요. 프레임을 하나만 사용할 때 (그것도 프레임 속에서 링크를 클릭해야하는 경우)_top을 가끔 사용하고 프레임 속에 프레임이 있는 특수한 상황에서만 _parent를 사용합니다.
+
+    </p>
+    <hr>
+</body>
+</html>
