@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Links</title>
+    <link rel="stylesheet" href="../CSS/w3.css">
+    <style>
+        a:link {
+            color: lightblue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        /*ssss*/
+    </style>
 </head>
-<body>
+<body> 
+    <div class="w3-main w3-teal">
     <h1>HTML Links - HTML 페이지 연결</h1>
     <p>
         이 HTML 문서는 HTML에서 링크로 페이지를 연결하는 내용을 공부하려고 작성한 문서입니다. 모든 내용을 <a href="https://www.w3schools.com/html/html_links.asp" target="_parent_">https://www.w3schools.com/html/html_links.asp</a>에서 배웠습니다. 
         오늘 스승의 날(5월 15일)인데 감사합니다, w3 선생님~ 
+    </p>
+    <p>
+        <a href="#bookmark">책갈피 링크 만들기 소제목으로 이동</a>
+        <br>
+        <a href="#testframe">테스트용 iframe으로 이동</a>
     </p>
     <hr>    
     <h2>&lt;a&gt; 태그</h2>
@@ -44,11 +77,68 @@
         <a href="CSS.html" target="_blank">_blank</a> <a href="CSS.html" target="_self">_self</a> <a href="CSS.html" target="_parent">_parent</a> <a href="CSS.html" target="_top">_top</a>
         <a href="../HTML/Links copy.html" target="myframe">myframe</a>
         <br>
-        <iframe name="myframe" style="width:100%; height: 330px"></iframe>
+        <iframe name="myframe" id="testframe" style="width:100%; height: 330px"></iframe>
         <br>
         주로 _blank와 _self를 많이 써요. 프레임을 하나만 사용할 때 (그것도 프레임 속에서 링크를 클릭해야하는 경우)_top을 가끔 사용하고 프레임 속에 프레임이 있는 특수한 상황에서만 _parent를 사용합니다.
+        <hr>
 
-    </p>
-    <hr>
+        <h2>이미지에 링크 넣기</h2>
+        <p>
+            <a href="https://github.com/ForteDev/Learning_HTML" target="_blank"><img src="../img/병합충돌.PNG" alt="github repository"></a>
+            <br>
+            a태그 사이에 img 태그를 삽입하면 이미지 링크가 생성된다. 이미지를 클릭하면 링크로 이동한다. 
+        </p>
+        <hr>
+        
+        <h2>버튼형 링크 만들기</h2>
+        <button onclick="document.location = 'Colors.html'">HTML Colors</button>
+        <p>
+            HTML에서 버튼으로 링크를 만들 수 있습니다. 자바스크립트를 사용해서 버튼을 생성하는 건데요. 자세한 내용은 JavaScript를 공부하면서 배우게 될 거예요. 
+            버튼을 클릭하면 링크로 이동합니다.
+        </p>
+        <hr>
+
+        <h2>링크 제목</h2>
+        <p>
+            링크의 제목은 링크에 커서를 올려놀때 뜨는 작은 도움말을 정의합니다. 
+            <a href="CSS.html" title="CSS 실습 웹페이지로 이동합니다.">커서를 올려보세요.</a>
+        </p>
+        <hr>
+    </div>
+    <div class="w3-main w3-text">
+        <h2>링크 색상 설정</h2>
+        <p>
+            HTML 링크는 사용자가 방문하지 않은 링크, 방문한 링크, 활성화된 링크(마우스 우클릭시 나타나는 링크), 커서를 살포시 올려놓을 때 나타나는 링크의 색을 다르게 표현합니다. 
+            CSS 설정을 통해 링크의 색을 설정할 수 있습니다.
+            <br>
+            따로 설정하지 하지 않을 경우 링크의 색상은 아래와 같이 표시됩니다. 
+            <ul>
+                <li><b>방문하지 않은 링크</b>는 파란색 밑줄쳐진 글자로 표시돼요.</li>
+                <li><b>방문한 링크</b>는 보라색 밑줄쳐진 글자로 표시돼요.</li>
+                <li><b>활성화된 링크</b>는 빨간색 밑줄쳐진 글자로 표시돼요</li>
+            </ul>
+            지금 보고계시는 웹페이지의 링크도 CSS로 손을 봤습니다. 방문한 링크는 분홍색, 활성화된 링크는 노란색으로 설정했어요. 
+            각 설정은 CSS 설정에서 a:link{} a:visited{} a:hover{} a:active{} 를 적어주고 중괄호안에 설정값을 적어주면 돼요.
+            <br>
+            <a href="Links copy.html" target="_blank" style="background-color: #f44336; color: white; padding:  15px 25px; text-align: center; text-decoration: none; display: inline-block;">Link Copy</a>에서 버튼모양으로 만든 링크를 볼 수 있어요. 
+            참고로 이 버튼은 JavaScript의 버튼과는 다릅니다. 
+        </p>
+
+        <h2 id="bookmark">책갈피 만들기</h2>
+        <p>
+            HTML 책갈피(북마크)는 한 웹페이지 안에서 특정 부분으로 이동시키는 역할을 해요. 책갈피는 웹페이지가 아주 길 때 유용하답니다. 
+            책갈피를 만들려면 먼저 책갈피를 생성하고 책갈피로 이동하는 링크를 만들면 돼요. 
+            그러기 위해서는 id 속성을 사용해야 합니다. 
+            &lt;h2 id="C4"&gt;Chapter 4 &lt;/h2&gt;처럼 사용합니다. 링크로 연결시키고 싶은 태그에 id 속성을 붙여주면 됩니다. 
+            그리고 &lt;a href="#C4"&gt;Jump to Chapter 4&lt;a&gt;와 같이 링크 태그를 제작합시다.
+            id 명칭 앞에 #를 붙여야 하더라고요. 
+            <br>
+            다른 페이지의 북마크로 이동하는 링크를 생성할 수도 있습니다. (href = "웹주소<font style="color: red;"><i>#책갈피id</i></font>")식으로 적어줍시다. 
+            <a href="CSS.html#CSS란?">CSS.html의 CSS란? 소제목으로 이동</a> 
+            <br>
+            상단의 링크는 <font style="color: tomato;">href="CSS.html#CSS란?"</font> 으로 만들었어요.
+        </p>
+    </div>
+
 </body>
 </html>
