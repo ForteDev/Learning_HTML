@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+    <link rel="stylesheet" href="CSS/w3.css">
+</head>
+<body>
+    <h1>HTML Images - HTML 이미지</h1>
+    <p>
+        이 웹페이지는 HTML 이미지를 공부하고 실습하기 위해 2020년 5월 18일에 작성한 페이지입니다. 주로 <a href="https://www.w3schools.com/html/html_images.asp">https://www.w3schools.com/html/html_images.asp</a>에 근거한 내용을 담고 있습니다. 
+    </p>
+    <hr>
+    
+    <div class="">
+    <h2>HTML 이미지 문법</h2>
+    <p>
+        이미지 태그는 <code class="w3-codespan">&lt;img&gt;</code>태그를 통해 정의합니다. 
+        이미지 태그는 빈 요소입니다. 종료 태그를 갖지 않습니다. <br>
+        src 속성을 통해서 이미지의 URL을 입력합니다. 
+    </p>
+    <hr>
+    </div>
+    <h2>alt - 대체 텍스트 속성</h2>
+    <img src="Hello.jpg" alt="안보여!"><br>
+    <p>
+        img 태그에 src 속성과 더불어 <code class="w3-codespan">alt</code> 속성을 자주 사용해요. alt 속성은 이미지의 대체 텍스트를 나타내요. 
+        만일 이용자가 모종의 이유로 이미지를 보지 못할 경우(연결 속도가 느리거나, src 속성에 오류가 있거나, 맹인이라 스크린 리더를 사용해야 할 경우) 이미지 대신 대체 텍스트가 표시됩니다. 
+        대체 텍스트가 이미지를 볼 수 없는 경우에 쓰이니 이미지를 설명하는 문구를 <code class="w3-codespan">alt</code> 속성에 적어야 하겠죠?
+        따라서 대체 텍스트는 선택이 아닌 필수입니다. 
+    </p>
+    <hr>
+    <h2>Width & Height - 이미지 크기 조정</h2>
+    <img src="https://cdn.pixabay.com/photo/2016/02/10/16/37/cat-1192026_960_720.jpg" alt="검정 줄무늬가 있는 귀여운 고양이 사진" style="width: 512px;height: 384px;">
+    <p>
+        이미지의 너비와 높이를 조정하는 두가지 방법이 있어요. 첫번째는 너비와 높이 조정을 위해 <code class="w3-codespan">style</code> 속성을 사용하는 방법입니다. 
+        스타일 속성으로 너비와 높이를 설정하면 됩니다. 이미지의 픽셀을 정하거나 화면을 차지하는 비율(%)을 정하므로 크기를 조정할 수 있습니다. <br>
+        이미지의 너비와 높이를 조정하는 두번째 방법은 너비와 높이 속성을 사용하는 것이에요. 너비와 높이 속성은 무조건 픽셀 단위로 정의됩니다. <br>
+        두가지 방법중 어느 방법을 사용하든 간에 이미지의 너비와 높이를 명시하는 것이 좋아요. 너비와 높이를 정해놓지 않으면 이미지 로딩중에 웹페이지가 깜빡일 수 있어요.
+    </p>
+    <img src="https://lh3.googleusercontent.com/proxy/AF7bznSKFlJkM-_8q6EyX3zafaOuqciQ-fHCc29841nk5guotOvt6oJabmKmDKlygJVivp1XweMO6dQHArkI96GZjZkWiKRpbo6I12A_-jBa" alt="귀여운 연갈색 새끼 진돗개, 강아지 뒤로 알 수 없는 차량의 궤도가 얼핏 보인다" width="340" height="340" ">
+    <p>
+        <code class="w3-codespan">width</code>, <code class="w3-codespan">height</code>, <code class="w3-codespan">style</code> 속성중에 무엇을 사용해야 할까요? 
+        w3school에서는 <code class="w3-codespan">style</code> 속성을 사용하라고 추천해줍니다. 스타일 속성을 사용해야 웹페이지에 적용된 CSS가 이미지를 조정하는 것을 방지합니다. 
+    </p>
+    <p>
+        아래 이미지는 너비 속성을 128 픽셀로 설정해놨습니다. 근데 CSS가 덮어써서 너비가 100%로 설정되었습니다. 
+    </p>
+    <img src="https://www.w3schools.com/html/html5.gif" alt="HTML5 Icon" style="width:100%;" width="128" height="128">
+    <p>
+        아래 이미지는 스타일 속성을 사용했어요. 128 픽셀로 설정해놔서 이게 역으로 CSS를 덮어씁니다.
+    </p>
+    <img src="https://www.w3schools.com/html/html5.gif" alt="HTML5 Icon" style="width: 128px; height: 128px;">
+    <hr>
+    
+</body>
+</html>
